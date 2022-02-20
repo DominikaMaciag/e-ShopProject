@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+  color: #e8e8e8;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+button{
+  background-color: #5d4954;
+  border: none;
+  color: #e8e8e8;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links a{
+  color: #e8e8e8;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.extra div {
+  width: 21px;
+  height: 2px;
+  background-color: #e8e8e8;
+  margin: 25%;
+  transition: all 0.3s ease;
+}
+
+.extra{
+  display: none;
+}
+
+/*
+@media screen and (max-width: 1224px){
+  .nav-links{
+    width: 35%;
+  }
+}*/
+
+@media screen and (max-width: 1224px){
+  .nav-links{
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .extra{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.panel{
+  display: block;
+  margin: 4% 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.reg{
+  display: block;
+  margin: 4% 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+.register a, button{
+  displa:block;
+  text-decoration: none;
+  color: #e8e8e8;
+}
+
+input{
+  display: block;
+}
+
+.link{
+  text-decoration: none;
+  color: #e8e8e8;
+}
