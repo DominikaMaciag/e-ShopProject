@@ -64,8 +64,16 @@ router.post('/register', encoder, function(req,res){
   });
 });
 
-router.get('/koszyk', function(req, res, next) {
-  res.send('your products');
+router.get('/tea', function(req, res, next) {
+    res.render('tea_site');
+});
+
+router.get('/coffee', function(req, res, next) {
+  res.render('coffee_site');
+});
+
+router.get('/accessories', function(req, res, next) {
+  res.render('accessories_site');
 });
 
 //Exports
