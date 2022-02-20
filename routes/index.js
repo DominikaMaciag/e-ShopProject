@@ -1,9 +1,8 @@
 const express = require('express');
-//const app = express();
 const router = express.Router();
 const bodyParser = require("body-parser");
 const encoder = bodyParser.urlencoded();
-const passport = require("passport");
+const shopController = require('../controllers/shop');
 
 //Connecting to database:
 const mysql = require("mysql2");
@@ -64,9 +63,8 @@ router.post('/register', encoder, function(req,res){
   });
 });
 
-router.get('/tea', function(req, res, next) {
-    res.render('tea_site');
-});
+///PODSTRONA Z HERBATKĄ
+router.get('/tea', shopController.getAllProducts);
 
 router.get('/coffee', function(req, res, next) {
   res.render('coffee_site');

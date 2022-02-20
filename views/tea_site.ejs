@@ -3,9 +3,14 @@
     <link rel="stylesheet" href="/stylesheets/products.css">
 </head>
 
-<div class="all">
-    <div class="item1"><img src="/images/harbata_zielona.jpg"></div>
-    <div class="item2"><img src="/images/herbata_czarna.jpg"></div>
-    <div class="item3"><img src="/images/herbata_biala.jpeg"></div>
-</div>
+<% for(let p of prods){ %>
+    <div class="all">
+        <img src="<%=p.photo%>">
+        <div class="info">
+            <h4><%=p.title%>></h4>
+            <h5><%=p.price%>></h5>
+        </div>
+    </div> <%
+}%>
+
 <%- include ('ejs/footer.ejs'); -%>

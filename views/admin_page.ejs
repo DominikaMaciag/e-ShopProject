@@ -1,2 +1,14 @@
 <%- include ('ejs/admin_header.ejs'); -%>
+<div class="add_product">
+    <h1>Dodaj produkt:</h1>
+    <form action="/admin" method="post">
+        <label for="title">nazwa produktu</label>
+        <input type="text" id="title" name="title"/>
+        <label for="price">cena</label>
+        <input type="text" id="price" name="price"/>
+        <label for="photo">zdjęcie produktu</label>
+        <input type="url" id="photo" name="photo"/>
+        <button type="submit"> Dodaj </button>
+    </form>
+</div>
 <%- include ('ejs/admin_footer.ejs'); -%>

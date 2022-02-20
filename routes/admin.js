@@ -1,14 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const adminController = require('../controllers/admin');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('admin_page');
-});
+router.get('/', adminController.getProductForm);
 
-router.get('admin/products', function(req, res, next) {
-    res.send('add products');
-});
+router.post('/', adminController.postProduct); //gdy klikniemy button
+
 
 //Exports
 module.exports = router;
