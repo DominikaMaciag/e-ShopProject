@@ -65,6 +65,7 @@ router.post('/register', encoder, function(req,res){
 
 ///PODSTRONA Z HERBATKĄ
 router.get('/tea', shopController.getAllProducts);
+router.post('/tea', shopController.addToCart);
 
 router.get('/coffee', function(req, res, next) {
   res.render('coffee_site');

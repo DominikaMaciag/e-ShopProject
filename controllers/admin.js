@@ -11,7 +11,7 @@ exports.postProduct = (req, res, next)=> { //gdy klikniemy button
     const price = req.body.price;
     const photo = req.body.photo;
 
-    const prod = new Product(title,price,photo); //tworzymy instancje klasy
+    const prod = new Product(title,price,photo, null); //tworzymy instancje klasy
     prod.save(); //this z product.js reprezentuje prod
     console.log(Product.findAll());
 
