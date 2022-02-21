@@ -9,7 +9,7 @@ module.exports = class Cart {
                 existingProduct.qty += 1;
                 cart.totalPrice += product.price;
             }
-            else {
+            else { //jeśli nie jest w koszyku
                 product.qty = 1;
                 cart.products.push(product);
                 cart.totalPrice += product.price;
@@ -19,7 +19,7 @@ module.exports = class Cart {
             cart = {products: [], totalPrice: 0};
             product.qty = 1;
             cart.products.push(product);
-            cart.totalPrice = product.price;
+            cart.totalPrice += product.price;
         }
     }
 

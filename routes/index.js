@@ -67,6 +67,8 @@ router.post('/register', encoder, function(req,res){
 router.get('/tea', shopController.getAllProducts);
 router.post('/tea', shopController.addToCart);
 
+router.get('/cart', shopController.getCart);
+
 router.get('/coffee', function(req, res, next) {
   res.render('coffee_site');
 });
