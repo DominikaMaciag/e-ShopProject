@@ -18,3 +18,8 @@ exports.getCart = (req,res,next) => {
     const cart = Cart.getCart();
     res.render('cart', {cart: cart, path: '/cart'})
 }
+
+exports.deleteInCart = (req,res,next) => {
+    Cart.delete(req.body.prodId);
+    res.redirect('/cart');
+}

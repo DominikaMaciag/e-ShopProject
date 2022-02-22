@@ -26,4 +26,13 @@ module.exports = class Cart {
     static getCart(){
         return cart;
     }
+
+    static delete(productId){
+        const isExisting = cart.products.findIndex(p=> p.id == productId);
+        if(isExisting >= 0){
+            const deletedProduct = cart.products[isExisting];
+            cart.totalPrice -= deletedProduct.price * deletedProduct.qty;
+            cart.products.splice(isExisting,1);
+        }
+    }
 }

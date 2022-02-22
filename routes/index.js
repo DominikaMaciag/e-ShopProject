@@ -69,6 +69,7 @@ router.post('/tea', shopController.addToCart);
 
 ///KOSZYK ZAKUPOWY
 router.get('/cart', shopController.getCart);
+router.post('/cart', shopController.deleteInCart);
 
 ///PODSTRONA Z OPISEM FIRMY
 router.get('/coffee', function(req, res, next) {
