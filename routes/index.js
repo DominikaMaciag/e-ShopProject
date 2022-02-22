@@ -63,18 +63,16 @@ router.post('/register', encoder, function(req,res){
   });
 });
 
-///PODSTRONA Z HERBATKĄ
+///PODSTRONA Z PRZEDMIOTAMI
 router.get('/tea', shopController.getAllProducts);
 router.post('/tea', shopController.addToCart);
 
+///KOSZYK ZAKUPOWY
 router.get('/cart', shopController.getCart);
 
+///PODSTRONA Z OPISEM FIRMY
 router.get('/coffee', function(req, res, next) {
   res.render('coffee_site');
-});
-
-router.get('/accessories', function(req, res, next) {
-  res.render('accessories_site');
 });
 
 //Exports

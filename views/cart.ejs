@@ -1,10 +1,10 @@
 <%- include ('ejs/header.ejs'); -%>
     <head>
         <script src="/public/javascripts/cart.js"></script>
-        <!-- <script src="/controllers/shop.js"></script> -->
+        <link rel="stylesheet" href="/stylesheets/products.css">
     </head>
 
-    <div>
+    <div class="all">
         <% if (cart === null || cart.products.length == 0) {%>
             <h1>Brak produktów w koszyku</h1>
         <% } else { %>
@@ -13,11 +13,11 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">nazwa produktu</th>
-                        <th scope="col">cena</th>
-                        <th scope="col">ilość</th>
-                        <th scope="col">usuń</th>
+                        <th class="th" scope="col">#</th>
+                        <th class="th" scope="col">nazwa produktu</th>
+                        <th class="th" scope="col">cena</th>
+                        <th class="th" scope="col">ilość</th>
+                        <th class="th" scope="col">usuń</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,8 +32,8 @@
                     </tr>
                 <% } %>
                 <tr>
-                    <td>W sumie:</td>
-                    <td colspan="4"><%= cart.totalPrice%> zł</td>
+                    <td class="sum">W sumie: </td>
+                    <td class="sum" colspan="4"><%= cart.totalPrice%> zł</td>
                 </tr>
                 </tbody>
             </table>

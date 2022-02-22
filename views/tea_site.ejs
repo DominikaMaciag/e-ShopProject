@@ -8,9 +8,9 @@
         <img src="<%=p.photo%>">
         <div class="info">
             <h4><%=p.title%></h4>
-            <h5><%=p.price%></h5>
+            <h5><%=p.price%> zł</h5>
         </div>
-        <div>
+        <div class="info">
             <form action="/tea" method="post">
                 <input type="hidden" name="id" value="<%=p.id%>">
                 <button type="submit" class="button_add">Dodaj do koszyka</button>

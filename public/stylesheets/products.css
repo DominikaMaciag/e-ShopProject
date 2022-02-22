@@ -1,6 +1,56 @@
-.all img{
+*{
+    overflow-x: hidden;
+}
+.all {
     display: block;
     margin-left: 5%;
     margin-top: 5%;
-    width: 25%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.all img {
+    max-width: 15%;
+}
+h1 {
+    padding-bottom: 20px;
+}
+.th {
+    padding-right: 30px;
+}
+.sum {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.add_product{
+    display: block;
+    margin: 4% 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.bg_img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://github.com/DominikaMaciag/projekt-sklep-internetowy/blob/main/public/images/tea_add2.jpg?raw=true");
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 25%;
+    padding-left: 25%;
+    color: #e8e8e8;
+}
+
+p{
+    margin-bottom: 10px;
 }
