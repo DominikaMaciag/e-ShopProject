@@ -1,11 +1,10 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-nav{
-
+.nav{
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,7 +20,7 @@ nav{
   font-size: 22px;
 }
 
-button{
+.button{
   background-color: #5d4954;
   border: none;
   color: #e8e8e8;
@@ -146,11 +145,18 @@ button{
   color: #e8e8e8;
 }
 
-input{
+input {
   display: block;
 }
 
 .link{
   text-decoration: none;
   color: #e8e8e8;
+}
+
+.add_product{
+  margin-left: 5%;
+  margin-top: 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
 }

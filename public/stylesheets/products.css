@@ -1,6 +1,13 @@
 *{
     overflow-x: hidden;
 }
+
+input {
+    display: none;
+}
+input {
+    display: inline-block;
+}
 .all {
     display: block;
     margin-left: 5%;
@@ -37,7 +44,7 @@ h1 {
     height: 100%;
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://github.com/DominikaMaciag/projekt-sklep-internetowy/blob/main/public/images/tea_add2.jpg?raw=true");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://github.com/DominikaMaciag/projekt-sklep-internetowy/blob/main/public/images/tea_add2.jpg?raw=true");
 }
 
 .overlay{
@@ -45,12 +52,13 @@ h1 {
     height: 100%;
     font-size: 26px;
     padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    white-space: pre-line;
     color: #e8e8e8;
 }
 
 p{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
+

@@ -1,7 +1,7 @@
 <%- include ('ejs/admin_header.ejs'); -%>
 <head>
-    <link rel="stylesheet" href="/stylesheets/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <div class="add_product">
     <h1>Dodaj produkt:</h1>
@@ -12,7 +12,7 @@
         <input type="text" id="price" name="price"/>
         <label for="photo">zdjęcie produktu</label>
         <input type="url" id="photo" name="photo"/>
-        <button type="submit"> Dodaj </button>
+        <button type="submit" class="button"> Dodaj </button>
     </form>
 </div>
 <%- include ('ejs/admin_footer.ejs'); -%>

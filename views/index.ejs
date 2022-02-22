@@ -1,4 +1,62 @@
 <%- include ('ejs/header.ejs'); -%>
-<!--- chcemy tu wrzucić .jpg --->
-<img src="/images/tea_add.jpg" alt="czajnik z herbatą">
+<head>
+    <link rel="stylesheet" href="/stylesheets/carousel.css">
+</head>
+
+
+<section class="section">
+    <!--- image slider --->
+    <div class="slider">
+        <div class="slides">
+            <!--- buttons --->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--- buttons --->
+            <!--- slide images --->
+            <div class="st first">
+                <img class="pic" id="pic1" src="/images/coffee.png" alt="zdjęcie ziaren kawy oraz jej liści">
+            </div>
+            <div class="st">
+                <img class="pic" id="pic2" src="/images/coffee2.png" alt="zdjęcie ziaren kawyi">
+            </div>
+            <div class="st">
+                <img class="pic" id="pic3" src="/images/tea-add2.png" alt="zdjęcie herbaty matcha">
+            </div>
+            <div class="st">
+                <img class="pic" src="/images/tea.png" alt="zdjęcie herbaty nalewanej z czajnika">
+            </div>
+            <!--- slide images --->
+            <!--- auto navigation --->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--- auto navigation --->
+        </div>
+        <!--- manual navigation --->
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--- manual navigation --->
+    </div>
+    <!--- image slider --->
+</section>
+<script type="text/javascript">
+    let counter=1;
+    setInterval(function (){
+        document.getElementById('radio'+counter).checked=true;
+        counter ++;
+        if(counter>4){
+            counter = 1;
+        }
+    },2000)
+</script>
+
 <%- include ('ejs/footer.ejs'); -%>
