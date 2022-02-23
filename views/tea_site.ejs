@@ -3,7 +3,8 @@
     <link rel="stylesheet" href="/stylesheets/products.css">
 </head>
 
-<% for(let p of prods){ %>
+<div class="loop">
+    <% for(let p of prods){ %>
     <div class="all">
         <img src="<%=p.photo%>">
         <div class="info">
@@ -17,6 +18,9 @@
             </form>
         </div>
     </div> <%
-}%>
+    }%>
+
+</div>
+
 
 <%- include ('ejs/footer.ejs'); -%>

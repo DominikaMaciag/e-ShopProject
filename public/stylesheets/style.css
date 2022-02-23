@@ -62,12 +62,6 @@
   display: none;
 }
 
-/*
-@media screen and (max-width: 1224px){
-  .nav-links{
-    width: 35%;
-  }
-}*/
 
 @media screen and (max-width: 1224px){
   .nav-links{
