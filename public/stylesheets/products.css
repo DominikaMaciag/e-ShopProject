@@ -19,6 +19,12 @@ input {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+.all{
+    margin-left: 15%;
+    margin-top: 8%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
 .all img {
     max-width: 50%;
 }
